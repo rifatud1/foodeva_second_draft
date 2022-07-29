@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.foodeva.foodeva_second_draft">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="foodeva_second_draft"
         android:icon="@mipmap/ic_launcher">
