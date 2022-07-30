@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:foodeva_second_draft/models/customer_model.dart';
 import 'package:foodeva_second_draft/utils/ProgressHUD.dart';
 import 'package:foodeva_second_draft/utils/validator_service.dart';
-import '../api_service.dart';
-import '../utils/validator_service.dart';
+import '../../api_service.dart';
+import '../../utils/validator_service.dart';
 
 class SignupPage extends StatefulWidget {
   @override

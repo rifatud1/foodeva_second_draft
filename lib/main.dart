@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:foodeva_second_draft/pages/home/home_page.dart';
 import 'package:get_storage/get_storage.dart';
-import 'pages/signup_page.dart';
+import 'pages/signup_login/signup_page.dart';
 import 'package:get/get.dart';
 void main() async{
   await GetStorage.init();

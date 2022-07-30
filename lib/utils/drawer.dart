@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:foodeva_second_draft/controllers/login_registration/login_registration_controller.dart';
+import 'package:foodeva_second_draft/pages/home/home_page.dart';
 import 'package:get/get.dart';
 
-import '../../utils/_utils.dart';
+import '_utils.dart';
+import '../pages/signup_login/login.dart';
 
 LoginRegistrationController _loginRegistrationController = Get.put(LoginRegistrationController());
 Widget drawer(BuildContext context) {
@@ -340,6 +342,7 @@ Widget drawer(BuildContext context) {
                               // _loginRegistraionController
                               //     .activeCategoryMenu.value = 0;
                               // Get.to(HomePage());
+                              Get.to(HomePage());
                             },
                             child: Container(
                               decoration: BoxDecoration(
@@ -354,16 +357,16 @@ Widget drawer(BuildContext context) {
                                 padding: const EdgeInsets.all(4.0),
                                 child: Row(
                                   // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                  children: [
+                                  children: const [
                                     Icon(
                                       Icons.home,
                                       color: primaryColor,
                                     ),
-                                    const SizedBox(
+                                    SizedBox(
                                       width: 20,
                                     ),
                                     Text(
-                                      'home'.tr,
+                                      'Home',
                                       style: TextStyle(
                                           color: primaryColor),
                                     )
@@ -385,7 +388,7 @@ Widget drawer(BuildContext context) {
                               //     .activeShippingMenu.value = 0;
                               // _loginRegistraionController
                               //     .activeCategoryMenu.value = 0;
-                              // Get.to(Login());
+                              Get.to(Login());
                             },
                             child: Container(
                               decoration: BoxDecoration(
@@ -409,7 +412,7 @@ Widget drawer(BuildContext context) {
                                       width: 20,
                                     ),
                                     Text(
-                                      'profile'.tr,
+                                      'Profile',
                                       style: TextStyle(
                                           color: primaryColor),
                                     )
@@ -455,7 +458,7 @@ Widget drawer(BuildContext context) {
                                       width: 20,
                                     ),
                                     Text(
-                                      'shipping_address'.tr,
+                                      'Shipping Address',
                                       style: TextStyle(
                                           color: primaryColor),
                                     )
@@ -501,7 +504,7 @@ Widget drawer(BuildContext context) {
                                       width: 20,
                                     ),
                                     Text(
-                                      'categories'.tr,
+                                      'Categories',
                                       style: TextStyle(
                                           color: primaryColor),
                                     )
@@ -525,7 +528,7 @@ Widget drawer(BuildContext context) {
                                   width: 20,
                                 ),
                                 Text(
-                                  'order_status'.tr,
+                                  'Order Status',
                                   style:
                                   TextStyle(color: primaryColor),
                                 )
@@ -545,7 +548,7 @@ Widget drawer(BuildContext context) {
                                   width: 20,
                                 ),
                                 Text(
-                                  'wish_list'.tr,
+                                  'Wish List',
                                   style:
                                   TextStyle(color: primaryColor),
                                 )
@@ -587,7 +590,7 @@ Widget drawer(BuildContext context) {
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Text(
-                              'logout'.tr,
+                              'Logout',
                               style: const TextStyle(color: Colors.white),
                             ),
                           ),
